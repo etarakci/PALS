@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PALS
+Version: 2.0.10
+Summary: Pipeline for Analyzing Lesions after Stroke
+Home-page: https://github.com/npnl/PALS
+Author: AlexandreHutton
+Author-email: erendizt@usc.edu
+License: MIT

@@ -1,0 +1,120 @@
+[
+    {
+        "group": 1,
+        "imports": [],
+        "name": "00_mask_grabber",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "01_file_load1",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "02_BIDSgrabber",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "00_mask_grabber"
+        ],
+        "name": "03_file_load2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "02_BIDSgrabber"
+        ],
+        "name": "04_identity",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "04_identity"
+        ],
+        "name": "05_file_load0",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "04_identity"
+        ],
+        "name": "06_extract_skip",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "05_file_load0",
+            "03_file_load2",
+            "01_file_load1"
+        ],
+        "name": "07_wm_removal",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "06_extract_skip"
+        ],
+        "name": "08_registration_identity",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "07_wm_removal",
+            "00_mask_grabber"
+        ],
+        "name": "09_image_writer0",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "07_wm_removal"
+        ],
+        "name": "10_csv_output_corr",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "08_registration_identity"
+        ],
+        "name": "11_registration_transf_sink",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "08_registration_identity",
+            "00_mask_grabber"
+        ],
+        "name": "12_transformation_skip",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "12_transformation_skip"
+        ],
+        "name": "13_overlap_calc",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "13_overlap_calc"
+        ],
+        "name": "14_csv_output",
+        "size": 1
+    }
+]

@@ -137,3 +137,5 @@ def get_transformed_image(image: bids.layout.BIDSImageFile,
     # data = image.get_image().get_fdata()
     # Apply transformation and return
     return nb.processing.resample_from_to(data, (data.shape, affine_transf @ data.affine), order=1)
+
+
